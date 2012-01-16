@@ -1,0 +1,125 @@
++--------------------------------------------------------------------+
++--------------------------------------------------------------------+
+|                                                                    |
+| To do list for tabX1 Board:                                        |
+|                                                                    |
++--------------------------------------------------------------------+
++--------------------------------------------------------------------+
+
+ Summary:
+----------------------------------------------------------------------
+    1.                  Keyboard
+    2. Works, +chace	PS2 Mouse
+    3. 			Text mode for LCD
+    4. 			Battery 
+    5. 			5V booster, test with Wifi dongle
+    6. 			Build case 
+    7. Driver works	Acceleromter
+    8. Completed	GPIO Mouse
+    9. Completed 	Load GUI and test 
+
++-------------------------------------------------------------------+
+| GUI Interface:                                                    |
++-------------------------------------------------------------------+
+    - Choose appropriate GUI to install
+      . 	gnome    ***probably too big)
+      . 	xfce4
+      . 	lxde
+      . 	kde (or kde4) Seems to be too big
+      .		openbox
+      .-> fluxbox  ***nice size, works good !
+
+    - first install x-windows
+      . apt-get install xorg      (which takes forever)
+      . apt-get install fluxbox   (also  takes forever)
+      . apt-get install rox-filer
+      . apt-get install kde 
+
+      . apt-get install xserver-xorg-input-evtouch
+      . apt-get install netsurf
+
++-------------------------------------------------------------------+
+| KERNEL AND DRIVERS:                                               |
++-------------------------------------------------------------------+
+    - LCD Driver - Works !
+      . DONE ! Set read and write functions to wrap address correctly
+
+    - Wifi Driver - Works ! 
+      . Set up to automatically come up
+
+    - Touchscreen - Works !
+      Fiddle with settings
+
+    - PS2 Mouse - Works !  Might need to add caching
+
+    - GPIO Mouse switches - Works, combined with Ps2 Mouse
+
+    - Need keyboard
+
+    - Test accelerometer driver - Done - Works
+
+
+
++-------------------------------------------------------------------+
+| FPGA HDL DEVELOPMENT                                              |
++-------------------------------------------------------------------+
+    - DONE -- LCD Screen driver - Works !
+
+    - Make LCD a module and create new TabX1 project
+
+    - Keyboard to RS232 driver
+
+    - Switch between text and graphics
+      . switch text graphic modes from mode input line
+
+    - PCM Sound 
+
++-------------------------------------------------------------------+
+| FPGA PIC config set up:                                           |
++-------------------------------------------------------------------+
+    - switch text graphic modes from RS232 command line
+      . add command to taboot pic code, use button as toggle
+
+    - Reset the board and FPGA from PIC after init setup time
+      . option in eeprom - done and working!
+
+    - init the fpga with banner 1st or TTY 
+      . figure some way to show banner logo screen on boot up
+
+    - bl1, xt1 and xf1 tested and working !
+    - taboot - picle working !
+
+
++-------------------------------------------------------------------+
+| To do list for PC Board:                                          |
++-------------------------------------------------------------------+
+    - Install 5V booster chip
+
+    - Install Battery charger regulator chip
+
+    - Install Acceleromter
+
+
++-------------------------------------------------------------------+
+| Make a Case                                                       |
++-------------------------------------------------------------------+
+    - DONE !Cut aluminum back plane to size
+           . cut notches for flat cables to pass through
+           . cut and glue butress strips to back plate
+           . drill and tap standoffs and attach
+  
+    - Cut Plexiglass side pieces to size 
+      . make sure high enough to come level with LCD after it is mounted
+
+    - glue side pieces to back plate
+
+    - cut clear plexiglass back cover
+      . drill mounting holes
+
+    - cut bezel for front and mount
+
+
++-------------------------------------------------------------------+
+| End of Todo List                                                  |
++-------------------------------------------------------------------+
+ 

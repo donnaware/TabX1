@@ -1,0 +1,67 @@
+[PROJECT]
+Target=taboot.hex
+Development_Mode=
+Processor_Text=PIC18F2520
+ToolSuite=CCS
+Processor=0x2520
+[taboot]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=taboot.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=C:\Dev1\Linux\tab1\taboot\src\taboot.c
+2=C:\Dev1\Linux\tab1\taboot\src\taboot.h
+3=C:\Dev1\Linux\tab1\taboot\src\FPGA.h
+4=C:\Program Files\PICC\devices\18F2520.h
+5=C:\Dev1\Linux\tab1\taboot\src\Flash.h
+6=C:\Dev1\Linux\tab1\taboot\src\SST25V.h
+7=
+8=
+9=
+10=SST25V.h
+11=
+[Directories]
+Include=C:\Program Files\PICC\devices\;C:\Program Files\PICC\drivers\;
+Library=
+LinkerScript=
+[defines]
+enabled=0
+D1=
+V1=
+[fileformats]
+forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+FileList=C:\Dev1\Linux\tab1\taboot\src\taboot.c
+[taboot.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[Units]
+Count=1
+1=taboot.c (main)
+Link=0
